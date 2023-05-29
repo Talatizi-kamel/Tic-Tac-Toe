@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morpion.AcceuilController">
+   <children>
+      <MenuBar prefHeight="34.0" prefWidth="${anchorpane.width}" style="-fx-background-color: blue;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+            <ImageView fitHeight="${anchorpane.height}" fitWidth="${anchorpane.width}" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img.png" />
+               </image>
+            </ImageView>
+      <Button fx:id="button" layoutX="124.0" layoutY="483.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Humain vs Humain" />
+      <Button fx:id="button2" layoutX="607.0" layoutY="483.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Humain vs Machine" />
+   </children>
+</AnchorPane>
