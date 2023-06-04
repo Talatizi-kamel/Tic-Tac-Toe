@@ -1,13 +1,14 @@
 package com.example.morpion;
 
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Priority;
-import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
+import javafx.util.Duration;
 
 
 public class AcceuilController {
@@ -18,6 +19,8 @@ public class AcceuilController {
     AnchorPane anchorpane;
     @FXML
     Button button2;
+
+
 
     public void initialize() {
         // Initialisation des éléments de l'interface utilisateur ici
@@ -41,6 +44,7 @@ public class AcceuilController {
         // Positionne le VBox en bas à droite de l'AnchorPane
         anchorpane.setBottomAnchor(container1, 10.0);
         anchorpane.setLeftAnchor(container1, 10.0);
+        ;
 
 
     }
