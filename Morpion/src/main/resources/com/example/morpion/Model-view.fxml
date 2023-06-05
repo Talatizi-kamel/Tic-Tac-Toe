@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morpion.ModelControllerr">
+    <children>
+        <Pane fx:id="pane" prefHeight="${anchor.height}" prefWidth="${anchor.width}" style="-fx-background-color: black;">
+            <children>
+                <Button fx:id="buttonSupprimer" layoutX="389.0" layoutY="342.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Supprimer" />
+                <Button mnemonicParsing="false" onAction="#Accueil" style="-fx-background-color: blue;" text="Accueil" />
+                <VBox fx:id="vBox" layoutX="317.0" layoutY="131.0" prefHeight="200.0" prefWidth="230.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

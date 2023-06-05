@@ -11,7 +11,7 @@
           <Menu mnemonicParsing="false" text="IA">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#onclickSetting" text="Settings" />
-                  <MenuItem mnemonicParsing="false" text="Models" />
+                  <MenuItem mnemonicParsing="false" onAction="#onclickModel" text="Models" />
             </items>
           </Menu>
         </menus>
