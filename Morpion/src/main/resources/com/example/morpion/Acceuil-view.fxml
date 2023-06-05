@@ -10,7 +10,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="IA">
             <items>
-              <MenuItem mnemonicParsing="false" text="Settings" />
+              <MenuItem mnemonicParsing="false" onAction="#onclickSetting" text="Settings" />
                   <MenuItem mnemonicParsing="false" text="Models" />
             </items>
           </Menu>

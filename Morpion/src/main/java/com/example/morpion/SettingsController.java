@@ -54,7 +54,7 @@ import java.util.Scanner;
             Button Accueil = new Button("Accueil");
             Accueil.setStyle("-fx-background-color: #2053c6;");
             Accueil.setOnMouseClicked(event -> {
-                FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Accueil-view.fxml"));
+                FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Acceuil-view.fxml"));
                 Parent parent = null;
                 try {
                     parent = loader.load();

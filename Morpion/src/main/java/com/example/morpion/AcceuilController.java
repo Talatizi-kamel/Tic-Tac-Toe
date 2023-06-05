@@ -1,14 +1,23 @@
 package com.example.morpion;
 
 import javafx.animation.TranslateTransition;
+import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
+import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.io.IOException;
 
 
 public class AcceuilController {
@@ -21,6 +30,19 @@ public class AcceuilController {
     Button button2;
 
 
+    public void onclickSetting(Event event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Settings-view.fxml"));
+        Parent parent = loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent,600, 400);
+        stage.setTitle("Settings");
+        stage.setScene(scene);
+        stage.show();
+
+        // Ferme la fenêtre actuelle
+        Stage currentStage = (Stage) ((MenuItem) event.getSource()).getParentPopup().getOwnerWindow();
+        currentStage.close();
+    }
 
     public void initialize() {
         // Initialisation des éléments de l'interface utilisateur ici
@@ -45,7 +67,5 @@ public class AcceuilController {
         anchorpane.setBottomAnchor(container1, 10.0);
         anchorpane.setLeftAnchor(container1, 10.0);
         ;
-
-
     }
 }
