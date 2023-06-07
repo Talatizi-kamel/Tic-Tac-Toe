@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morpion.pesudoController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;">
+            <children>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="175.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrez vos pseudo " wrappingWidth="249.7294921875">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="nomX" layoutX="42.0" layoutY="156.0" />
+                <TextField fx:id="nomO" layoutX="388.0" layoutY="156.0" />
+                <Button layoutX="267.0" layoutY="238.0" mnemonicParsing="false" onAction="#play" prefHeight="24.0" prefWidth="67.0" style="-fx-background-color: blue;" text="jouer" />
+                <Text fill="#fcf7f7" layoutX="98.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                    <font>
+                        <Font size="39.0" />
+                    </font>
+                </Text>
+                <Text fill="#f2ecec" layoutX="459.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O" wrappingWidth="13.232421875">
+                    <font>
+                        <Font size="53.0" />
+                    </font>
+                </Text>
+                <Text fill="#fffefe" layoutX="286.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

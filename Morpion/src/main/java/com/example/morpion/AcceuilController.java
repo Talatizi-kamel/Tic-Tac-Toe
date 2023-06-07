@@ -59,7 +59,22 @@ public class AcceuilController {
     }
 
     public void onclickVSHumain(Event event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Model-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("mode-jeu-view.fxml"));
+        Parent parent = loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent,700, 400);
+        stage.setTitle("Mode de jeu");
+        stage.setScene(scene);
+        stage.show();
+
+        // Fermer la fenêtre actuelle
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        currentStage.close();
+    }
+
+    public void onclickVsHumain(Event event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("pesudo-view.fxml"));
         Parent parent = loader.load();
         Stage stage = new Stage();
         Scene scene = new Scene(parent,700, 400);
@@ -67,8 +82,8 @@ public class AcceuilController {
         stage.setScene(scene);
         stage.show();
 
-        // Ferme la fenêtre actuelle
-        Stage currentStage = (Stage) ((MenuItem) event.getSource()).getParentPopup().getOwnerWindow();
+        // Fermer la fenêtre actuelle
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         currentStage.close();
     }
     public void initialize() {
