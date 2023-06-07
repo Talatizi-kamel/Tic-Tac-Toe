@@ -58,6 +58,19 @@ public class AcceuilController {
         currentStage.close();
     }
 
+    public void onclickVSHumain(Event event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Model-view.fxml"));
+        Parent parent = loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent,700, 400);
+        stage.setTitle("Models");
+        stage.setScene(scene);
+        stage.show();
+
+        // Ferme la fenêtre actuelle
+        Stage currentStage = (Stage) ((MenuItem) event.getSource()).getParentPopup().getOwnerWindow();
+        currentStage.close();
+    }
     public void initialize() {
         // Initialisation des éléments de l'interface utilisateur ici
         button2.setMaxWidth(Double.MAX_VALUE);
@@ -80,6 +93,6 @@ public class AcceuilController {
         // Positionne le VBox en bas à droite de l'AnchorPane
         anchorpane.setBottomAnchor(container1, 10.0);
         anchorpane.setLeftAnchor(container1, 10.0);
-        ;
+
     }
 }

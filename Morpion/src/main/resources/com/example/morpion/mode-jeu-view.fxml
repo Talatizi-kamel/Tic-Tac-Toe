@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.morpion.ModeJeuController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morpion.ModeJeuController">
+    <children>
+        <Pane prefHeight="${anchorPane.height}" prefWidth="${anchorPane.width}" style="-fx-background-color: black;" />
+        <RadioButton layoutX="105.0" layoutY="182.0" mnemonicParsing="false" text="Facile" textFill="WHITE">
+            <toggleGroup>
+                <ToggleGroup fx:id="group" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="moyen" layoutX="248.0" layoutY="182.0" mnemonicParsing="false" text="Moyen" textFill="WHITE" toggleGroup="$group" />
+        <RadioButton layoutX="384.0" layoutY="182.0" mnemonicParsing="false" text="Difficile" textFill="WHITE" toggleGroup="$group" />
+        <Button layoutX="254.0" layoutY="285.0" mnemonicParsing="false" onAction="#play" style="-fx-background-color: blue;" text="Jouer" />
+        <TextField fx:id="text" layoutX="182.0" layoutY="100.0" prefHeight="24.0" prefWidth="198.0" />
+        <Text fill="#f5f3f3" layoutX="179.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrez votre pesudo " wrappingWidth="206.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+    </children>
 </AnchorPane>
