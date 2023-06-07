@@ -99,7 +99,7 @@ import static ai.MultiLayerPerceptron.load;
 
         @FXML
         public void Accueil(Event event) throws IOException {
-            FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Accueil-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(SettingsController.class.getResource("Acceuil-view.fxml"));
             Parent parent = loader.load();
             Stage stage = new Stage();
             Scene scene = new Scene(parent,800, 600);
