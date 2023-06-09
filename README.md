@@ -16,3 +16,9 @@ re pas dans les détailles pour l ia par ce que c est pas le bute de ce projet
 
 ## Models
 dans Modes c est une interface ou on trouve l ensemble des models d apprentissage de l ia avec le mode de jeu que l utilisateur a choisie avant de commancer la partie 
+
+## Humain Vs Humain
+dans HumainVsHumain avant de commencer la partie le jeu vous offre une possibilité de saisire vos pesudo et oui vous jouer et du coup dans une partie y a le temps de la partie plus un champs pour afficher le tour de jouer et bien sur a chaque fin de partie on affiche le jouer qui gange et la ligne gagnante avec une transaction de java fx 
+
+## Humain Vs Ia
+dans HumainvsIa c est la meme chose mais la avant de commencer une partie on peut ecrire nos pesudo et puis on choisie un  niveau de difficulté et par défaut c est moyen 
