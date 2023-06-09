@@ -13,3 +13,6 @@ Vous avez la liberté d'employer une autre IA et d'autres donnés.
 ## Settings
 dans settings c est une interface de configuration de l aprentissage de l IA par la suite et dans cette interface on peut afficher l ensemble de configuartion qui se trouve dans le fichier config.txt avec une possibilité de les modifier par la suite dans tout les cas je rent
 re pas dans les détailles pour l ia par ce que c est pas le bute de ce projet 
+
+## Models
+dans Modes c est une interface ou on trouve l ensemble des models d apprentissage de l ia avec le mode de jeu que l utilisateur a choisie avant de commancer la partie 
